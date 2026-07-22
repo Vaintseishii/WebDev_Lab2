@@ -30,6 +30,10 @@ function App() {
           <div className="featured-image">
             <img src={black_wallet} alt="Black Wallet" />
           </div>
+
+          <div className = "productsGrid">
+            
+          </div>
         </section>
       </div>
     </div>

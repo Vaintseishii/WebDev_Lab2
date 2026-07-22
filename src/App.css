@@ -116,3 +116,9 @@ body {
 
     object-fit: contain;
 }
+
+.productsGrid {
+    width: 800px;
+    height: auto;
+    overflow-y: scroll;
+}
