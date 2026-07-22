@@ -1,38 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFF;
+    color: #1C1C1C;
+    font-family: "Manrope", sans-serif;
+}
+
 .app {
-  min-height: 100vh;
-  background-color: #FAFAFF;
+    min-height: 100vh;
+    background-color: #FAFAFF;
+}
+
+.hero {
+    background-color: #EEF0F2;
 }
 
 .header {
     height: 80px;
-    display: flex;
-    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    background-color: #FAFAFF;
-    font-family: "Manrope", sans-serif;
-}
 
-.header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-
-.cart {
-  position: absolute;
-  right: 40px;
-  top: 10px;
-  font-size: 1.25rem;
-  color: #1C1C1C;
-  font-weight: bold;
+    padding: 0 40px;
 }
 
 .menu-button {
     justify-self: start;
+
     background: none;
     border: none;
+
     font-size: 1.5rem;
-    cursor: pointer;
     color: #1C1C1C;
+
+    cursor: pointer;
 }
 
+.header h1 {
+    justify-self: center;
+
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.cart {
+    justify-self: end;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.featured-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px 60px;
+}
+
+.featured-text {
+    max-width: 500px;
+}
+
+.featured-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.featured-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+
+    color: #555;
+
+    margin-bottom: 30px;
+}
+
+.add-to-cart {
+    padding: 14px 30px;
+
+    background-color: #1C1C1C;
+    color: white;
+
+    border: none;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+
+.featured-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.featured-image img {
+    width: 500px;
+    height: auto;
+
+    object-fit: contain;
+}
