@@ -2,18 +2,13 @@ import "./App.css";
 import black_wallet from "./assets/black_wallet.png";
 
 import ProductBox from "./productBox";
+import Header from "./header"
 
 function App() {
   return (
     <div className="app">
       <div className="hero">
-        <header className="header">
-          <button className="menu-button">☰</button>
-
-          <h1>Blackout EDC</h1>
-
-          <p className="cart">Cart (0)</p>
-        </header>
+        <Header />
 
         <section className="featured-product">
           <div className="featured-text">
@@ -34,12 +29,17 @@ function App() {
           </div>
 
         </section>
-
-        <div className = "productsGrid">
-            <ProductBox />
-        </div>
-
       </div>
+
+      <div className = "productsGrid">
+        <ProductBox />
+        <ProductBox />
+        <ProductBox />
+        <ProductBox />
+        <ProductBox />
+        <ProductBox />
+      </div>
+
     </div>
   );
 }

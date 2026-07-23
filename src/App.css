@@ -117,11 +117,14 @@ body {
     object-fit: contain;
 }
 
-.productsGrid {
-    width: 800px;
-    height: auto;
 
-    display:    grid;
-    grid-template-columns: repeat(3, 1fr);
-    overflow-y: scroll;
+
+.productsGrid {
+    width:                  auto;
+    height:                 auto;
+    display:                grid;
+    justify-content:        center;
+    grid-template-columns:  auto auto auto;
+    gap:                    20px;
+    overflow-y:             scroll;
 }
