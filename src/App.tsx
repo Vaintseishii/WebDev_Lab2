@@ -30,7 +30,7 @@ function App() {
 
         </section>
       </div>
-
+      <div className = "separationLine"></div>
       <div className = "productsGrid">
         <ProductBox />
         <ProductBox />
