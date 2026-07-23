@@ -1,6 +1,8 @@
 import "./App.css";
 import black_wallet from "./assets/black_wallet.png";
 
+import ProductBox from "./productBox";
+
 function App() {
   return (
     <div className="app">
@@ -31,10 +33,12 @@ function App() {
             <img src={black_wallet} alt="Black Wallet" />
           </div>
 
-          <div className = "productsGrid">
-            
-          </div>
         </section>
+
+        <div className = "productsGrid">
+            <ProductBox />
+        </div>
+
       </div>
     </div>
   );

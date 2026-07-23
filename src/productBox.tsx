@@ -1,5 +1,9 @@
-export default function() {
+import "./productBox.css"
+
+export default function ProductBox() {
    return(
-      <div></div>
+      <div className = "boxSize">
+	aaaaaa
+      </div>
    )
 }

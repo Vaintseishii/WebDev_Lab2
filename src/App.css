@@ -120,5 +120,8 @@ body {
 .productsGrid {
     width: 800px;
     height: auto;
+
+    display:    grid;
+    grid-template-columns: repeat(3, 1fr);
     overflow-y: scroll;
 }
