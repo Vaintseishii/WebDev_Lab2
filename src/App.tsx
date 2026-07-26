@@ -3,6 +3,7 @@ import black_wallet from "./assets/black_wallet.png";
 
 import ProductBox from "./productBox";
 import Header from "./header"
+import FilterBox from "./filterBox";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       </div>
       <div className = "separationLine"></div>
       <div className = "productsGrid">
+        <FilterBox/>
         <ProductBox />
         <ProductBox />
         <ProductBox />
