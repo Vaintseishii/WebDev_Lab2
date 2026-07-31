@@ -4,7 +4,7 @@ import ProductBox from "./productBox";
 import Header from "./header";
 import FilterBox from "./filterBox";
 import ShoppingCart from "./shoppingCart";
-import { createContext, useReducer, useContext } from "react";
+import { createContext, useReducer, useContext, useState } from "react";
 
 type CartState = { width: number };
 type CartAction = { type: "OPEN" } | { type: "CLOSE" };
@@ -35,12 +35,13 @@ export function useCart() {
 
 function App() {
    const [state, dispatch] = useReducer(cartReducer, { width: 0 });
+   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
    return (
       <CartContext.Provider value={{ state, dispatch }}>
          <div className="app">
             <div className="hero">
-               <Header />
+               <Header onMenuClick={() => setIsFilterOpen((open) => !open)} />
                <section className="featured-product">
                   <div className="featured-text">
                      <h2>The All Dark</h2>
@@ -57,7 +58,6 @@ function App() {
             </div>
             <div className="separationLine"></div>
             <div className="productsGrid">
-               <FilterBox />
                <ProductBox />
                <ProductBox />
                <ProductBox />
@@ -65,6 +65,7 @@ function App() {
                <ProductBox />
                <ProductBox />
             </div>
+            <FilterBox isOpen={isFilterOpen} />
             <ShoppingCart />
          </div>
       </CartContext.Provider>
