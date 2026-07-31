@@ -55,6 +55,19 @@
     cursor: pointer;
 }
 
+.select-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #1C1C1C;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
 .category-group {
     position: relative;
     display: flex;
@@ -119,7 +132,6 @@
 .range-group {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 24px;
     gap: 16px;
 }

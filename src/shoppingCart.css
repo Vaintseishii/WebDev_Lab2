@@ -1,11 +1,105 @@
-.frame {
-  height: 250px; 
-  width: 0; 
+.cartBackdrop {
   position: fixed;
-  z-index: 1;
+  inset: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 80;
+  padding: 0;
+}
+
+.frame {
+  position: fixed;
   top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s; 
+  right: -420px;
+  width: 380px;
+  height: 100vh;
+  z-index: 90;
+  background: #FAFAFF;
+  box-shadow: -16px 0 40px rgba(0, 0, 0, 0.12);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: right 0.35s ease;
+}
+
+.frame--open {
+  right: 0;
+}
+
+.cartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.closeCart {
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.emptyCart {
+  color: #555;
+}
+
+.cartItem {
+  border-bottom: 1px solid rgba(28, 28, 28, 0.12);
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cartItem h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.cartItem p {
+  margin: 0;
+  color: #555;
+}
+
+.cartItemActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cartItemActions button {
+  border: 1px solid #1C1C1C;
+  background: transparent;
+  cursor: pointer;
+  min-width: 28px;
+  height: 28px;
+}
+
+.removeItem {
+  min-width: auto;
+  padding: 0 10px;
+}
+
+.cartTotals {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid rgba(28, 28, 28, 0.12);
+  padding-top: 16px;
+}
+
+.cartTotals div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

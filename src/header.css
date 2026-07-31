@@ -12,6 +12,11 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.075);
 }
 
+.header button {
+    border: none;
+    background: transparent;
+}
+
 .cart 
 {
     justify-self: end;

@@ -47,6 +47,12 @@
     align-items: center;
 }
 
+.productInfo > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 .productTitle,
 .productPrice {
     margin: 0;
@@ -59,6 +65,12 @@
 
 .productPrice {
     font-size: 1rem;
+    color: #555;
+}
+
+.productCategory {
+    margin: 0;
+    font-size: 0.85rem;
     color: #555;
 }
 
@@ -75,12 +87,32 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .plus {
     font-size: 5rem;
     font-weight: 300;
+    color: #1C1C1C;
+}
+
+.productAction {
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.productAction:disabled {
+    cursor: not-allowed;
+}
+
+.productActionLabel {
+    font-size: 0.95rem;
+    font-weight: 600;
     color: #1C1C1C;
 }
 

@@ -1,27 +1,51 @@
 import "./productBox.css";
-import black_wallet from "./assets/black_wallet.png";
+import type { Product } from "./types";
 
-export default function ProductBox() {
+type ProductBoxProps = {
+  product: Product;
+  onAddToCart: (product: Product) => void;
+};
+
+const currencyFormatter = new Intl.NumberFormat("en-PH", {
+  style: "currency",
+  currency: "PHP",
+  minimumFractionDigits: 0,
+});
+
+export default function ProductBox({ product, onAddToCart }: ProductBoxProps) {
   return (
-    <div className="productCard">
+    <article className="productCard">
       <div className="productContent">
         <div className="boxSize">
           <img
-            src={black_wallet}
-            alt="Black Wallet"
+            src={product.image}
+            alt={product.name}
             className="productImage"
           />
         </div>
 
         <div className="productInfo">
-          <h2 className="productTitle">Black Wallet</h2>
-          <p className="productPrice">₱799</p>
+          <div>
+            <h2 className="productTitle">{product.name}</h2>
+            <p className="productCategory">{product.category}</p>
+          </div>
+          <p className="productPrice">{currencyFormatter.format(product.price)}</p>
         </div>
       </div>
 
       <div className="productOverlay">
-        <span className="plus">+</span>
+        <button
+          type="button"
+          className="productAction"
+          onClick={() => onAddToCart(product)}
+          disabled={!product.inStock}
+        >
+          <span className="plus">+</span>
+          <span className="productActionLabel">
+            {product.inStock ? "Add to Cart" : "Out of Stock"}
+          </span>
+        </button>
       </div>
-    </div>
+    </article>
   );
 }

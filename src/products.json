@@ -1,0 +1,202 @@
+[
+  {
+    "id": "knife-001",
+    "name": "Blackout Tanto",
+    "category": "Knives",
+    "price": 2499,
+    "image": "./assets/knives/knife1.png",
+    "inStock": true
+  },
+  {
+    "id": "knife-002",
+    "name": "Carbon Slice",
+    "category": "Knives",
+    "price": 2899,
+    "image": "./assets/knives/knife2.png",
+    "inStock": true
+  },
+  {
+    "id": "knife-003",
+    "name": "Stealth Folder",
+    "category": "Knives",
+    "price": 3199,
+    "image": "./assets/knives/knife3.png",
+    "inStock": true
+  },
+  {
+    "id": "knife-004",
+    "name": "Night Edge",
+    "category": "Knives",
+    "price": 3599,
+    "image": "./assets/knives/knife4.png",
+    "inStock": true
+  },
+  {
+    "id": "knife-005",
+    "name": "Shadow Blade",
+    "category": "Knives",
+    "price": 3999,
+    "image": "./assets/knives/knife5.png",
+    "inStock": true
+  },
+  {
+    "id": "wallet-001",
+    "name": "Slate Slim",
+    "category": "Wallets",
+    "price": 799,
+    "image": "./assets/wallets/wallet1.png",
+    "inStock": true
+  },
+  {
+    "id": "wallet-002",
+    "name": "Midnight Card Holder",
+    "category": "Wallets",
+    "price": 899,
+    "image": "./assets/wallets/wallet2.png",
+    "inStock": true
+  },
+  {
+    "id": "wallet-003",
+    "name": "Black Stitch Wallet",
+    "category": "Wallets",
+    "price": 1099,
+    "image": "./assets/wallets/wallet3.png",
+    "inStock": true
+  },
+  {
+    "id": "wallet-004",
+    "name": "Urban Fold",
+    "category": "Wallets",
+    "price": 1299,
+    "image": "./assets/wallets/wallet4.png",
+    "inStock": true
+  },
+  {
+    "id": "wallet-005",
+    "name": "Carbon Pocket",
+    "category": "Wallets",
+    "price": 1499,
+    "image": "./assets/wallets/wallet5.png",
+    "inStock": true
+  },
+  {
+    "id": "watch-001",
+    "name": "Noir Field",
+    "category": "Watches",
+    "price": 6999,
+    "image": "./assets/watches/watch1.png",
+    "inStock": true
+  },
+  {
+    "id": "watch-002",
+    "name": "Black Steel Chrono",
+    "category": "Watches",
+    "price": 7999,
+    "image": "./assets/watches/watch2.png",
+    "inStock": true
+  },
+  {
+    "id": "watch-003",
+    "name": "Shadow Dial",
+    "category": "Watches",
+    "price": 8599,
+    "image": "./assets/watches/watch3.png",
+    "inStock": true
+  },
+  {
+    "id": "watch-004",
+    "name": "Dark Timepiece",
+    "category": "Watches",
+    "price": 9199,
+    "image": "./assets/watches/watch4.png",
+    "inStock": true
+  },
+  {
+    "id": "watch-005",
+    "name": "Midnight Reserve",
+    "category": "Watches",
+    "price": 9999,
+    "image": "./assets/watches/watch5.png",
+    "inStock": true
+  },
+  {
+    "id": "flashlight-001",
+    "name": "Night Beam",
+    "category": "Flashlights",
+    "price": 1599,
+    "image": "./assets/flashlights/flashlight1.png",
+    "inStock": true
+  },
+  {
+    "id": "flashlight-002",
+    "name": "Black Pulse",
+    "category": "Flashlights",
+    "price": 1799,
+    "image": "./assets/flashlights/flashlight2.png",
+    "inStock": true
+  },
+  {
+    "id": "flashlight-003",
+    "name": "Stealth Torch",
+    "category": "Flashlights",
+    "price": 1999,
+    "image": "./assets/flashlights/flashlight3.png",
+    "inStock": true
+  },
+  {
+    "id": "flashlight-004",
+    "name": "Shadow Beam",
+    "category": "Flashlights",
+    "price": 2299,
+    "image": "./assets/flashlights/flashlight4.png",
+    "inStock": true
+  },
+  {
+    "id": "flashlight-005",
+    "name": "Midnight Torch",
+    "category": "Flashlights",
+    "price": 2499,
+    "image": "./assets/flashlights/flashlight5.png",
+    "inStock": true
+  },
+  {
+    "id": "bag-001",
+    "name": "Urban Sling",
+    "category": "Bags",
+    "price": 3499,
+    "image": "./assets/bags/bag1.png",
+    "inStock": true
+  },
+  {
+    "id": "bag-002",
+    "name": "Shadow Pack",
+    "category": "Bags",
+    "price": 3799,
+    "image": "./assets/bags/bag2.png",
+    "inStock": true
+  },
+  {
+    "id": "bag-003",
+    "name": "Blackout Carrier",
+    "category": "Bags",
+    "price": 4099,
+    "image": "./assets/bags/bag3.png",
+    "inStock": true
+  },
+  {
+    "id": "bag-004",
+    "name": "Midnight Duffel",
+    "category": "Bags",
+    "price": 4499,
+    "image": "./assets/bags/bag4.png",
+    "inStock": true
+  },
+  {
+    "id": "bag-005",
+    "name": "Carbon Haul",
+    "category": "Bags",
+    "price": 4899,
+    "image": "./assets/bags/bag5.png",
+    "inStock": true
+  }
+]
