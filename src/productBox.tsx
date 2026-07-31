@@ -1,9 +1,9 @@
 import "./productBox.css";
+import { useShop } from "./shopContext";
 import type { Product } from "./types";
 
 type ProductBoxProps = {
   product: Product;
-  onAddToCart: (product: Product) => void;
 };
 
 const currencyFormatter = new Intl.NumberFormat("en-PH", {
@@ -12,7 +12,9 @@ const currencyFormatter = new Intl.NumberFormat("en-PH", {
   minimumFractionDigits: 0,
 });
 
-export default function ProductBox({ product, onAddToCart }: ProductBoxProps) {
+export default function ProductBox({ product }: ProductBoxProps) {
+  const { dispatch } = useShop();
+
   return (
     <article className="productCard">
       <div className="productContent">
@@ -37,7 +39,7 @@ export default function ProductBox({ product, onAddToCart }: ProductBoxProps) {
         <button
           type="button"
           className="productAction"
-          onClick={() => onAddToCart(product)}
+          onClick={() => dispatch({ type: "ADD_TO_CART", product })}
           disabled={!product.inStock}
         >
           <span className="plus">+</span>

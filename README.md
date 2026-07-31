@@ -3,7 +3,7 @@ Blackout EDC is a single-page React app for browsing all black everyday carry ge
 
 ## Members
 - Xanth Reign Palmes
-- Joseph Brian Azarraga (Vigger)
+- Joseph Brian Azarraga
 
 ## Setup
 1. Install Node.js and npm if not yet installed
