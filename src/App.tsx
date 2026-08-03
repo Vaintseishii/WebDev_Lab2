@@ -5,7 +5,6 @@ import Header from "./header";
 import ProductBox from "./productBox";
 import ShoppingCart from "./shoppingCart";
 import { useShop } from "./shopContext";
-import type { SortBy } from "./types";
 
 function App() {
    const { state, dispatch, cartItemCount } = useShop();
@@ -80,15 +79,14 @@ function App() {
             ))}
          </div>
          <FilterBox
-            isOpen={state.isFilterOpen}
-            categories={categories}
-            filters={state.filters}
-            onSearchChange={(searchQuery) => dispatch({ type: "SET_SEARCH_QUERY", searchQuery })}
-            onCategoryChange={(category) => dispatch({ type: "SET_CATEGORY", category })}
-            onMaxPriceChange={(maxPrice) => dispatch({ type: "SET_MAX_PRICE", maxPrice })}
-            onSortByChange={(sortBy: SortBy) => dispatch({ type: "SET_SORT_BY", sortBy })}
-            onApply={() => dispatch({ type: "CLOSE_FILTERS" })}
-         />
+               isOpen={state.isFilterOpen}
+               categories={categories}
+               filters={state.filters}
+               onApply={(filters) => {
+                  dispatch({ type: "SET_FILTERS", filters });
+                  dispatch({ type: "CLOSE_FILTERS" });
+               }}
+         />         
          <ShoppingCart isOpen={state.isCartOpen} />
       </div>
    );

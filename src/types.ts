@@ -39,8 +39,5 @@ export type Action =
   | { type: "INCREMENT_CART_ITEM"; id: string }
   | { type: "DECREMENT_CART_ITEM"; id: string }
   | { type: "REMOVE_FROM_CART"; id: string }
-  | { type: "SET_SEARCH_QUERY"; searchQuery: string }
-  | { type: "SET_CATEGORY"; category: string }
-  | { type: "SET_MAX_PRICE"; maxPrice: number }
-  | { type: "SET_SORT_BY"; sortBy: SortBy }
+  | { type: "SET_FILTERS"; filters: Filters }
   | { type: "CHECKOUT" };

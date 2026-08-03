@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./filterBox.css";
 import type { Filters, SortBy } from "./types";
 
@@ -6,24 +6,23 @@ type FilterBoxProps = {
   isOpen: boolean;
   categories: string[];
   filters: Filters;
-  onSearchChange: (searchQuery: string) => void;
-  onCategoryChange: (category: string) => void;
-  onMaxPriceChange: (maxPrice: number) => void;
-  onSortByChange: (sortBy: SortBy) => void;
-  onApply: () => void;
+  onApply: (filters: Filters) => void;
 };
 
 export default function FilterBox({
   isOpen,
   categories,
   filters,
-  onSearchChange,
-  onCategoryChange,
-  onMaxPriceChange,
-  onSortByChange,
   onApply,
 }: FilterBoxProps) {
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  const [draft, setDraft] = useState<Filters>(filters);
+
+  useEffect(() => {
+    if (isOpen) {
+      setDraft(filters);
+    }
+  }, [isOpen, filters]);
 
   return (
     <div className={isOpen ? "filterBox filterBox--open" : "filterBox"}>
@@ -37,8 +36,10 @@ export default function FilterBox({
           type="text"
           name="search"
           placeholder="Search"
-          value={filters.searchQuery}
-          onChange={(event) => onSearchChange(event.target.value)}
+          value={draft.searchQuery}
+          onChange={(event) =>
+            setDraft((prev) => ({ ...prev, searchQuery: event.target.value }))
+          }
         />
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -53,17 +54,20 @@ export default function FilterBox({
           min="0"
           step="1"
           placeholder="Max price"
-          value={filters.maxPrice}
-          onChange={(event) => onMaxPriceChange(Number(event.target.value))}
+          value={draft.maxPrice}
+          onChange={(event) =>
+            setDraft((prev) => ({ ...prev, maxPrice: Number(event.target.value) }))
+          }
         />
       </div>
-
 
       <div className="category-group">
         <select
           className="select-input"
-          value={filters.category}
-          onChange={(event) => onCategoryChange(event.target.value)}
+          value={draft.category}
+          onChange={(event) =>
+            setDraft((prev) => ({ ...prev, category: event.target.value }))
+          }
           onFocus={() => setIsCategoryOpen(true)}
           onBlur={() => setIsCategoryOpen(false)}
         >
@@ -81,8 +85,10 @@ export default function FilterBox({
       <div className="category-group">
         <select
           className="select-input"
-          value={filters.sortBy}
-          onChange={(event) => onSortByChange(event.target.value as SortBy)}
+          value={draft.sortBy}
+          onChange={(event) =>
+            setDraft((prev) => ({ ...prev, sortBy: event.target.value as SortBy }))
+          }
         >
           <option value="default">Sort by default</option>
           <option value="price-asc">Price: Low to High</option>
@@ -91,8 +97,7 @@ export default function FilterBox({
         </select>
       </div>
 
-  
-      <button className="apply-btn" onClick={onApply}>Apply</button>
+      <button className="apply-btn" onClick={() => onApply(draft)}>Apply</button>
     </div>
   );
 }

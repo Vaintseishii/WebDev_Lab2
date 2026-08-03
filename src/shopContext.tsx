@@ -76,26 +76,10 @@ export function reducer(state: State, action: Action): State {
         ...state,
         cart: state.cart.filter((item) => item.id !== action.id),
       };
-    case "SET_SEARCH_QUERY":
-      return {
-        ...state,
-        filters: { ...state.filters, searchQuery: action.searchQuery },
-      };
-    case "SET_CATEGORY":
-      return {
-        ...state,
-        filters: { ...state.filters, category: action.category },
-      };
-    case "SET_MAX_PRICE":
-      return {
-        ...state,
-        filters: { ...state.filters, maxPrice: action.maxPrice },
-      };
-    case "SET_SORT_BY":
-      return {
-        ...state,
-        filters: { ...state.filters, sortBy: action.sortBy },
-      };
+    case "SET_FILTERS":
+      return { 
+        ...state, 
+        filters: action.filters };
     case "CHECKOUT":
       return {
         ...state,
