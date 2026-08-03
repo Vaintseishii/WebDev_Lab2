@@ -11,3 +11,5 @@ Blackout EDC is a single-page React app for browsing all black everyday carry ge
 3. Install dependencies with "npm install"
 4. To run the website type "npm start"
 
+Github repo link
+https://github.com/Vaintseishii/WebDev_Lab2.git
