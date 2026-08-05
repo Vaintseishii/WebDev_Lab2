@@ -17,7 +17,7 @@
   },
   {
     "id": "knife-003",
-    "name": "Stealth Folder",
+    "name": "Pocket Folder",
     "category": "Knives",
     "price": 3199,
     "image": "./assets/knives/knife3.png",
@@ -25,7 +25,7 @@
   },
   {
     "id": "knife-004",
-    "name": "Night Edge",
+    "name": "Nights Edge",
     "category": "Knives",
     "price": 3599,
     "image": "./assets/knives/knife4.png",
@@ -41,7 +41,7 @@
   },
   {
     "id": "wallet-001",
-    "name": "Slate Slim",
+    "name": "All Dark",
     "category": "Wallets",
     "price": 799,
     "image": "./assets/wallets/wallet1.png",
@@ -49,7 +49,7 @@
   },
   {
     "id": "wallet-002",
-    "name": "Midnight Card Holder",
+    "name": "Dark Stitch",
     "category": "Wallets",
     "price": 899,
     "image": "./assets/wallets/wallet2.png",
@@ -57,7 +57,7 @@
   },
   {
     "id": "wallet-003",
-    "name": "Black Stitch Wallet",
+    "name": "Black Card",
     "category": "Wallets",
     "price": 1099,
     "image": "./assets/wallets/wallet3.png",
@@ -73,7 +73,7 @@
   },
   {
     "id": "wallet-005",
-    "name": "Carbon Pocket",
+    "name": "Carbon",
     "category": "Wallets",
     "price": 1499,
     "image": "./assets/wallets/wallet5.png",
@@ -81,7 +81,7 @@
   },
   {
     "id": "watch-001",
-    "name": "Noir Field",
+    "name": "Noir",
     "category": "Watches",
     "price": 6999,
     "image": "./assets/watches/watch1.png",
@@ -89,7 +89,7 @@
   },
   {
     "id": "watch-002",
-    "name": "Black Steel Chrono",
+    "name": "Chrono",
     "category": "Watches",
     "price": 7999,
     "image": "./assets/watches/watch2.png",
@@ -97,7 +97,7 @@
   },
   {
     "id": "watch-003",
-    "name": "Shadow Dial",
+    "name": "Shadow",
     "category": "Watches",
     "price": 8599,
     "image": "./assets/watches/watch3.png",
@@ -105,7 +105,7 @@
   },
   {
     "id": "watch-004",
-    "name": "Dark Timepiece",
+    "name": "Phantom",
     "category": "Watches",
     "price": 9199,
     "image": "./assets/watches/watch4.png",
@@ -113,7 +113,7 @@
   },
   {
     "id": "watch-005",
-    "name": "Midnight Reserve",
+    "name": "Midnight",
     "category": "Watches",
     "price": 9999,
     "image": "./assets/watches/watch5.png",
@@ -185,7 +185,7 @@
   },
   {
     "id": "bag-004",
-    "name": "Midnight Duffel",
+    "name": "Onyx",
     "category": "Bags",
     "price": 4499,
     "image": "./assets/bags/bag4.png",
@@ -193,7 +193,7 @@
   },
   {
     "id": "bag-005",
-    "name": "Carbon Haul",
+    "name": "Carbon Hauler",
     "category": "Bags",
     "price": 4899,
     "image": "./assets/bags/bag5.png",
